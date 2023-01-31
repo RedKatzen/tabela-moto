@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tabela {
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    margin: auto auto;
+    font-size: 2em;
+    min-width: 400px;
+    width: 75%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .02);
+}
+
+.tabela thead tr {
+    background-color: #2499ff;
+    color: #fdfdfd;
+    text-align: left;
+    font-weight: bold;
+}
+
+.tabela th,
+.tabela td {
+    padding: 15px;
+}
+
+.tabela tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.tabela tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.tabela tbody tr:last-of-type {
+    border-bottom: 2px solid hwb(208 9% 32%);
+}
+
+.tabela tbody tr:hover {
+    background-color: rgba(23, 100, 194, 0.10);
+}
