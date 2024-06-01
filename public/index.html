@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreadsheet App</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <button id="openFormBtn">Inserir novo</button>
+
+        <div class="header">
+            <span class="header-text" id="average">rendimento</span>
+        </div>
+
+        <form action="/submit-form" id="dataForm" class="hidden" method="post">
+            <label for="ltsInput">Litros gastos:</label>
+            <input type="number" step="0.01" name="ltsGastos" id="ltsInput">
+            <label for="kmInput">Km totais percorridos:</label>
+            <input type="number" step="0.01" name="kmTotais" id="kmInput">
+            <button type="submit" id="submitBtn">Enviar</button>
+        </form>
+        <table id="spreadsheet">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Horário</th>
+                    <th>Andado</th>
+                    <th>Lts Abast.</th>
+                    <th>Km Total</th>
+                    <th>Média</th>
+                </tr>
+            </thead>
+            <tbody id="spreadsheetBody">
+            <!-- Spreadsheet rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    
+<script src="./js/front.js"></script>
+</body>
+</html>
